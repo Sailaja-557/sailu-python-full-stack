@@ -1,0 +1,17 @@
+sailu : 456
+pra : 4789
+suguna : 4568
+
+delete name : pra
+ find name is : suguna
+edit nmae is : sailuaaa : 489
+bbb : 1256
+ccc : 789
+ddd : 7856
+
+delete name : ddd
+ find name is : ccc
+edit nmae is : aaa
+name: sailu, moblie:6651222 ,name nnn : mobile 4568
+name mmm : mobile 4895
+name vvvv : mobile 45698
