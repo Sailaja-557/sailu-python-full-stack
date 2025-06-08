@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - MySite</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+        .grid-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .grid-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+        .grid-card h3 {
+            padding: 0.75rem 1rem;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        /* Table Section */
+        .table-container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+            font-weight: bold;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><strong>MySite</strong></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid" aria-label="Gallery images">
+        <div class="grid-card">
+            <img src="https://via.placeholder.com/300x140?text=Image+1" alt="Image 1" />
+            <h3>Sunset Beach</h3>
+        </div>
+        <div class="grid-card">
+            <img src="https://via.placeholder.com/300x140?text=Image+2" alt="Image 2" />
+            <h3>Mountain Peaks</h3>
+        </div>
+        <div class="grid-card">
+            <img src="https://via.placeholder.com/300x140?text=Image+3" alt="Image 3" />
+            <h3>City Lights</h3>
+        </div>
+        <div class="grid-card">
+            <img src="https://via.placeholder.com/300x140?text=Image+4" alt="Image 4" />
+            <h3>Forest Trail</h3>
+        </div>
+        <div class="grid-card">
+            <img src="https://via.placeholder.com/300x140?text=Image+5" alt="Image 5" />
+            <h3>Desert Dunes</h3>
+        </div>
+        <div class="grid-card">
+            <img src="https://via.placeholder.com/300x140?text=Image+6" alt="Image 6" />
+            <h3>Ocean Waves</h3>
+        </div>
+    </section>
+
+    <!-- Image Details Table -->
+    <section class="table-container" aria-label="Image details table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Size</th>
+                    <th>Resolution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunset Beach</td>
+                    <td>1.2 MB</td>
+                    <td>3000x2000</td>
+                </tr>
+                <tr>
+                    <td>Mountain Peaks</td>
+                    <td>950 KB</td>
+                    <td>2800x1800</td>
+                </tr>
+                <tr>
+                    <td>City Lights</td>
+                    <td>1.5 MB</td>
+                    <td>3500x2200</td>
+                </tr>
+                <tr>
+                    <td>Forest Trail</td>
+                    <td>1.0 MB</td>
+                    <td>3200x2100</td>
+                </tr>
+                <tr>
+                    <td>Desert Dunes</td>
+                    <td>1.1 MB</td>
+                    <td>3000x2000</td>
+                </tr>
+                <tr>
+                    <td>Ocean Waves</td>
+                    <td>1.3 MB</td>
+                    <td>3300x2100</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MySite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
