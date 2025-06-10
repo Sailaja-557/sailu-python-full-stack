@@ -46,7 +46,7 @@
 // }
 
 // let oyy= true
-// let arey = false
+// let arey != false
 // if (oyy||arey) {
 //     console.log("welcome brooo...")
 // }
@@ -134,3 +134,5 @@ let arr = [1, 2, 3, 4];
 arr.push(5); // [1, 2, 3, 4, 5]
 arr.pop();   // [1, 2, 3, 4]
 console.log(arr)
+
+
